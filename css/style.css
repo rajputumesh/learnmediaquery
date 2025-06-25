@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+    width: 500px;
+    height: 200px;
+    border: 1px dashed red;
+    /* overflow: auto; x, y  */
+    overflow-y: auto; /* auto, scroll, hidden */
+    overflow-x: auto;
+}
