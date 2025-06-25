@@ -2,12 +2,37 @@ body {
   margin: 0;
   padding: 0;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .box {
-    width: 500px;
-    height: 200px;
-    border: 1px dashed red;
-    /* overflow: auto; x, y  */
-    overflow-y: auto; /* auto, scroll, hidden */
-    overflow-x: auto;
+  width: 25%;
+  height: 200px;
+  border: 1px dashed red;
+  /* overflow: auto; x, y  */
+  overflow-y: auto; /* auto, scroll, hidden */
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 426px) {
+  .box {
+    width: 100%;
+    background: yellow;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .box {
+    width: 50%x;
+    background: rgb(34, 10, 220);
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .box {
+    width: 40%;
+    background: rgb(220, 87, 10);
+  }
 }
